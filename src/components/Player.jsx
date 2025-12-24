@@ -13,8 +13,7 @@ export default function Player({ initialName, symbol }) {
         setIsEditing(false);
     }
 
-    function handleChange(event) { 
-        console.log(event);           
+    function handleChange(event) {           
         setPlayerName(event.target.value);
     }
 
