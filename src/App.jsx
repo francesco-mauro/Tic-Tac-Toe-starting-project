@@ -3,7 +3,26 @@ import { useState } from "react";
 import Player from "./components/Player.jsx";
 import GameBoard from "./components/GameBoard.jsx";
 import Log from "./components/Log.jsx";
-// import { use } from "react";
+import { WINNING_COMBINATIONS } from "./winning-combinations.js"; 
+
+
+
+
+
+// const WINNING_COMBINATIONS = 
+// [
+//   // Rows
+//   [{ row: 0, col: 0 }, { row: 0, col: 1 }, { row: 0, col: 2 }],
+//   [{ row: 1, col: 0 }, { row: 1, col: 1 }, { row: 1, col: 2 }],
+//   [{ row: 2, col: 0 }, { row: 2, col: 1 }, { row: 2, col: 2 }],
+//   // Columns
+//   [{ row: 0, col: 0 }, { row: 1, col: 0 }, { row: 2, col: 0 }],
+//   [{ row: 0, col: 1 }, { row: 1, col: 1 }, { row: 2, col: 1 }],
+//   [{ row: 0, col: 2 }, { row: 1, col: 2 }, { row: 2, col: 2 }]
+//   // Diagonals
+//   [{ row: 0, col: 0 }, { row: 1, col: 1 }, { row: 2, col: 2 }],
+//   [{ row: 0, col: 2 }, { row: 1, col: 1 }, { row: 2, col: 0 }]
+// ]
 
 function deriveActivePlayer(gameTurns) {
 
