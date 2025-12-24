@@ -5,7 +5,7 @@ export default function Player({ name, symbol }) {
     const [editedName, setEditedName] = useState(name);
 
     function handleEditClick() {
-        setIsEditing(true);
+        setIsEditing((editing) => !editing);
     }
 
     function handleNameChange(event) {
@@ -20,7 +20,7 @@ export default function Player({ name, symbol }) {
     // let btnCaption = "Edit";
 
     if (isEditing) {
-        playerName = <input type="text" required />
+        playerName = <input type="text" required value={name}/>
         // btnCaption = "Save";
     }
 
